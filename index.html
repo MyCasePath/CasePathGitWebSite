@@ -4,95 +4,26 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>MyCasePath – The Path Forward</title>
-  <style>
-    html, body {
-      height: 100%;
-      margin: 0;
-      padding: 0;
-    }
-    body {
-      min-height: 100vh;
-      background: url('Duxbury-Beach-Session-Big-Family.jpg') no-repeat center center fixed;
-      background-size: cover;
-      font-family: Arial, sans-serif;
-      color: #fff;
-    }
-    .logo {
-      position: absolute;
-      top: 32px;
-      left: 32px;
-      width: 180px;
-      background: rgba(255,255,255,0.0);
-      z-index: 10;
-    }
-    .overlay {
-      position: absolute;
-      top: 0; left: 0; right: 0; bottom: 0;
-      background: rgba(34, 67, 114, 0.45);
-      z-index: 1;
-    }
-    .content {
-      position: absolute;
-      top: 50%;
-      left: 50%;
-      transform: translate(-50%, -50%);
-      z-index: 2;
-      text-align: center;
-      width: 90vw;
-      max-width: 600px;
-    }
-    h1 {
-      font-size: 2.8em;
-      font-weight: bold;
-      margin: 0 0 20px 0;
-      letter-spacing: 2px;
-    }
-    p {
-      font-size: 1.5em;
-      margin: 0 0 24px 0;
-    }
-    .button {
-      background: #fff;
-      color: #234372;
-      padding: 14px 40px;
-      border: none;
-      border-radius: 6px;
-      font-size: 1.2em;
-      cursor: pointer;
-      text-decoration: none;
-      font-weight: bold;
-      margin-top: 18px;
-      box-shadow: 0 2px 10px rgba(34,67,114,0.09);
-      transition: background 0.15s;
-    }
-    .button:hover {
-      background: #f0f4f8;
-    }
-    @media (max-width: 600px) {
-      .logo {
-        width: 130px;
-        top: 16px;
-        left: 12px;
-      }
-      h1 {
-        font-size: 2em;
-      }
-      .content {
-        max-width: 98vw;
-      }
-    }
-  </style>
+  <link rel="stylesheet" href="src/styles/style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
+
 <body>
-  <img src="CasePath.png" alt="CasePath Logo" class="logo">
+  <img src="src/images/CasePath.png" alt="CasePath Logo" class="logo">
   <div class="overlay"></div>
+
+ 
   <div class="content">
     <h1>The Path Forward</h1>
     <p>
       Welcome to MyCasePath.<br>
       Your trusted solution for secure, intelligent case management.
     </p>
-    <a href="mailto:info@mycasepath.com" class="button">Contact Us</a>
+    <a href="https://forms.gle/d98ujBxcgfTxCKzEA" class="button">Lead Form <i class="fa fa-brands fa-google" style ="font-size: 24px"></i></a>
+    <a href="mailto:info@mycasepath.com" class="button"><i class="fa fa-envelope" style ="font-size: 24px"></i></a>
   </div>
+
+  <script src="src/js/script.js"></script>
+
 </body>
 </html>
