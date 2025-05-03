@@ -10,21 +10,87 @@ html, body {
     font-family: Arial, sans-serif;
     color: #fff;
   }
+
+  /*------------ Header/Sidebar ------------*/
+
+  .site-header {
+    width: 100%;
+    height: 20px;
+    background-color: rgb(194, 145, 151);
+    padding: 18px;
+    text-align: center;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* subtle shadow for depth */
+    position: fixed; /* makes it stay at the top when you scroll */
+    top: 0;
+    left: 0;
+    z-index: 1000;
+  }
+ #headerContact {
+  position: absolute;
+  top: -11px;
+  left: 90%;
+  z-index: 10;
+  padding: 10px 20px;
+ }
   .logo {
     position: absolute;
-    top: 32px;
-    left: 32px;
+    top: 10px;
+    left: 120px;
     width: 180px;
     background: rgba(255,255,255,0.0);
     z-index: 10;
   }
-  .overlay {
-    position: absolute;
-    top: 0; left: 0; right: 0; bottom: 0;
-    background: rgba(34, 67, 114, 0.45);
-    z-index: 1;
+  /* Hamburger menu button */
+  .menuBtn {
+    text-align: center;
+    cursor: pointer;
+    background-color: rgb(201, 170, 174);
+    color: rgb(0, 0, 0);
+    padding-bottom: 4px;
+    border: 1px solid rgba(0, 0, 0, 0.781);
+  }
+  .menuBtn button:hover {
+    background-color:  rgba(110, 110, 110, 0.699);
+  }
+  /* Hamburger container positioning */
+  .hamburger-container {
+    position: fixed;
+    top: 18px;
+    left: 35px;
+    scale: 1.8;
+    z-index: 11;
+   
+  }
+  /* Sidebar */
+  .sidebar {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color:rgb(184, 156, 160);
+    overflow-x: hidden;
+    transition: 0.3s;
+    padding-top: 100px;
+  }
+
+  .sidebar a {
+    padding: 10px 15px;
+    text-decoration: none;
+    font-size: 18px;
+    color: #ffffff;
+    display: block;
+    transition: 0.2s;
+  }
+
+  .sidebar a:hover {
+    background-color: rgba(110, 110, 110, 0.541);
   }
   
+  /*------------ Header/Sidebar ------------*/
+
+  /*------------ General ------------*/
+    
   .content {
     position: absolute;
     top: 50%;
@@ -34,6 +100,7 @@ html, body {
     text-align: center;
     width: 90vw;
     max-width: 600px;
+    
   }
   h1 {
     font-size: 2.8em;
@@ -44,7 +111,11 @@ html, body {
   p {
     font-size: 1.5em;
     margin: 0 0 24px 0;
+    color: rgb(255, 255, 255);
+    backdrop-filter: blur(10px) saturate(70%) brightness(55%) contrast(100%);
+    padding: 5px;
   }
+
   .button {
     background: #fff;
     color: #234372;
@@ -75,3 +146,59 @@ html, body {
       max-width: 98vw;
     }
   }
+
+  /*------------ General ------------*/
+
+  /*------------ Index ------------*/
+
+  #indexP1 {
+    width: 150%;
+    position:relative;
+    left: -24%
+  }
+
+  #myContent {
+    top: 40%;
+    left:50%;
+  }
+
+  /*------------ Index ------------*/
+
+  /*------------ About ------------*/
+
+  #aboutP1 {
+    width: 150%;
+    position:relative;
+    left: -24%
+  }
+
+  .image-table {
+    width: 100%;
+    border-collapse: collapse;
+    text-align: center;
+    margin: 30px auto;
+    backdrop-filter: blur(10px) saturate(70%) brightness(55%) contrast(100%);
+    padding: 5px;
+  }
+  
+  .image-table td {
+    padding: 15px;
+  }
+  
+  .image-table img {
+    width: 100px; /* adjust size */
+    height: auto;
+    border-radius: 10px; /* optional: rounded corners */
+    display: block;
+    margin: 0 auto;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* optional: nice shadow */
+  }
+  
+  .image-table p {
+    margin-top: 10px;
+    font-size: 16px;
+    color: #ffffff;
+  }
+
+
+  /*------------ About ------------*/

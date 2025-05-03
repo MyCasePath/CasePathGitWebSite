@@ -4,29 +4,83 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>MyCasePath – About Us</title>
-  <link rel="stylesheet" href="src/styles/style.css">
+  <link rel="stylesheet" href="../styles/style.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 
 <body>
-  <img src="src/images/CasePath.png" alt="CasePath Logo" class="logo">
-  <div class="overlay"></div>
+  <header id="myHeader" class="site-header">
+    <img src="../images/CasePath.png" alt="CasePath Logo" class="logo">
 
- 
-  <div class="content">
+    <div class="hamburger-container">
+      <button class="menuBtn" onclick="ToggleNav()">☰</button>
+    </div>
+
+    <a id="headerContact" href="src/pages/contact.html" class="button">Contact Us</a>
+  </header>
+
+  
+
+  <div id="mySidebar" class="sidebar">
+    <a href="../../index.html">Home</a>
+    <a href="about.html">About</a>
+    <a href="contact.html">Contact</a>
+  </div>
+
+
+  <div id="aboutContent" class="content">
     <h1>The Path Forward</h1>
-    <p>
+    <p id="aboutP1">
       About CasePath.<br>
       Your trusted solution for secure, intelligent case management.<br>
       Here at Case Path we are dedicated to creating intelligent solutions for complex cases. Founded by Tyson... in (xxxx), Case Path origionaly saw the need for multi-relatioinal case managment systems in the Foster Care industry <br>
       and has sence expanded our vison to many industries.
     </p>
-    <p> Add pictures of the board and founders here.</p>
-    <a href="https://forms.gle/d98ujBxcgfTxCKzEA" class="button">Lead Form <i class="fa fa-brands fa-google" style ="font-size: 24px"></i></a>
+    
+    <table class="image-table">
+      <tr>
+        <td>
+          <img src="../images/profileIkon.png"  alt="Name 1">
+          <p>Name 1</p>
+        </td>
+        <td>
+          <img src="../images/profileIkon.png"  alt="Name 2">
+          <p>Name 2</p>
+        </td>
+        <td>
+          <img src="../images/profileIkon.png"  alt="Name 3">
+          <p>Name 3</p>
+        </td>
+        <td>
+          <img src="../images/profileIkon.png"  alt="Name 4">
+          <p>Name 4</p>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <img src="../images/profileIkon.png"  alt="Name 5">
+          <p>Name 5</p>
+        </td>
+        <td>
+          <img src="../images/profileIkon.png"  alt="Name 6">
+          <p>Name 6</p>
+        </td>
+        <td>
+          <img src="../images/profileIkon.png"  alt="Name 7">
+          <p>Name 7</p>
+        </td>
+        <td>
+          <img src="../images/profileIkon.png" alt="Name 8">
+          <p>Name 8</p>
+        </td>
+      </tr>
+    </table>
+
+
     <a href="mailto:info@mycasepath.com" class="button"><i class="fa fa-envelope" style ="font-size: 24px"></i></a>
   </div>
 
-  <script src="src/js/script.js"></script>
+  <script src="../js/script.js"></script>
 
 </body>
 </html>
