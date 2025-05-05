@@ -9,13 +9,15 @@ html, body {
     background-size: cover;
     font-family: Arial, sans-serif;
     color: #fff;
+   position: relative;
+    top: 13%;
   }
 
   /*------------ Header/Sidebar ------------*/
 
   .site-header {
     width: 100%;
-    height: 20px;
+    height: 2.4%;
     background-color: rgb(194, 145, 151);
     padding: 18px;
     text-align: center;
@@ -27,7 +29,7 @@ html, body {
   }
  #headerContact {
   position: absolute;
-  top: -11px;
+  top: -19%;
   left: 90%;
   z-index: 10;
   padding: 10px 20px;
@@ -200,5 +202,16 @@ html, body {
     color: #ffffff;
   }
 
+
+  /*------------ About ------------*/
+
+   /*------------ Privacy ------------*/
+
+   #privacyP1 {
+    font-size: 1.3em;
+    width: 150%;
+    position:relative;
+    left: -28%
+  }
 
   /*------------ About ------------*/
