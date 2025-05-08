@@ -32,7 +32,7 @@ html, body {
   top: -19%;
   left: 90%;
   z-index: 10;
-  padding: 10px 20px;
+  padding: 0.5% 0.7%;
  }
   .logo {
     position: absolute;
@@ -48,7 +48,7 @@ html, body {
     cursor: pointer;
     background-color: rgb(201, 170, 174);
     color: rgb(0, 0, 0);
-    padding-bottom: 4px;
+    padding-bottom: 14%;
     border: 1px solid rgba(0, 0, 0, 0.781);
   }
   .menuBtn button:hover {
@@ -100,8 +100,8 @@ html, body {
     transform: translate(-50%, -50%);
     z-index: 2;
     text-align: center;
-    width: 90vw;
-    max-width: 600px;
+    width: 50%;
+    max-width: 100%;
     
   }
   h1 {
@@ -154,9 +154,9 @@ html, body {
   /*------------ Index ------------*/
 
   #indexP1 {
-    width: 150%;
+    width: 100%;
     position:relative;
-    left: -24%
+    /* left: -24%; */
   }
 
   #myContent {
@@ -168,10 +168,16 @@ html, body {
 
   /*------------ About ------------*/
 
+  #aboutBody {
+    top: 45%
+  }
+
   #aboutP1 {
-    width: 150%;
+    width: 100%;
     position:relative;
-    left: -24%
+    /* left: -24%; */
+    text-align: center;
+    font-size: 1.5em;
   }
 
   .image-table {
@@ -180,25 +186,32 @@ html, body {
     text-align: center;
     margin: 30px auto;
     backdrop-filter: blur(10px) saturate(70%) brightness(55%) contrast(100%);
-    padding: 5px;
+    padding: 0.5%;
   }
   
-  .image-table td {
-    padding: 15px;
+  .image-table tr {
+    padding: 2%;
+    border: solid black 1px;
   }
   
   .image-table img {
-    width: 100px; /* adjust size */
+    width: 28%; /* adjust size */
     height: auto;
     border-radius: 10px; /* optional: rounded corners */
     display: block;
     margin: 0 auto;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* optional: nice shadow */
+    position: relative;
+    top: 20px; 
+  }
+  .image-table h3 {
+    position: relative;
+    top: 15px
   }
   
   .image-table p {
     margin-top: 10px;
-    font-size: 16px;
+    font-size: 18px;
     color: #ffffff;
   }
 
@@ -209,9 +222,21 @@ html, body {
 
    #privacyP1 {
     font-size: 1.3em;
-    width: 150%;
+    width: 100%;
     position:relative;
-    left: -28%
+    
   }
 
-  /*------------ About ------------*/
+  /*------------  Privacy ------------*/
+  /*------------  Contact ------------*/
+  #contactP1 {
+    width: 100%;
+    position:relative;
+    /* left: -24%; */
+  }
+
+  #myContact {
+    top: 30%;
+    left:50%;
+  }
+  /*------------  Contact ------------*/
