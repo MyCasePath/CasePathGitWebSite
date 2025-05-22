@@ -1,48 +1,81 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>MyCasePath – The Path Forward</title>
-  <link rel="stylesheet" href="src/styles/style.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>CasePath | AI-Driven Case Management</title>
+  <link rel="stylesheet" href="styles.css" />
 </head>
-
 <body>
-  <header id="myHeader" class="site-header">
-    <img src="src/images/CasePath.png" alt="CasePath Logo" class="logo">
-
-    <div class="hamburger-container">
-      <button class="menuBtn" onclick="ToggleNav()">☰</button>
-    </div>
-
-    <a id="headerContact" href="src/pages/contact.html" class="button">Contact Us</a>
+  <header>
+    <div class="logo">CasePath</div>
+    <nav>
+      <a href="#features">Features</a>
+      <a href="#architecture">Architecture</a>
+      <a href="#technology">Technology</a>
+      <a href="#contact">Contact</a>
+    </nav>
   </header>
 
-  
+  <section class="hero">
+    <div class="hero-text">
+      <h1>Secure, Intelligent Case Management</h1>
+      <p>Transforming family and child welfare services with AI-driven automation and data intelligence.</p>
+      <a href="#contact" class="cta">Request a Demo</a>
+    </div>
+  </section>
 
-  <div id="mySidebar" class="sidebar">
-    <a href="index.html">Home</a>
-    <a href="src/pages/about.html">About</a>
-    <a href="src/pages/contact.html">Contact</a>
-    <a href="src/pages/privacy.html">Privacy</a>
-  </div>
+  <section class="video-section content-section">
+    <h2>Watch Our Demo</h2>
+    <iframe width="100%" height="400" src="https://www.youtube.com/embed/dQw4w9WgXcQ" title="CasePath Demo Video" frameborder="0" allowfullscreen></iframe>
+  </section>
 
- 
-  <div id="myContent" class="content" >
-    <h1>The Path Forward</h1>
-    <p id="indexP1">
-      Welcome to MyCasePath.<br>
-      Your trusted solution for secure, intelligent case management.<br>
-      <br>
-      CasePath is dedicated to creating an elegant case management solution to complex relational needs.  Integrating the latest generations of Artificial Intelligence and Machine Learning to aid in transcription and summarization of meeting and case progress.
-      
-    </p>
-    <a href="https://forms.gle/d98ujBxcgfTxCKzEA" class="button">Lead Form <i class="fa fa-brands fa-google" style ="font-size: 24px"></i></a>
-    <a href="mailto:info@mycasepath.com" class="button"><i class="fa fa-envelope" style ="font-size: 24px"></i></a>
-  </div>
+  <section id="features" class="content-section">
+    <h2>Key Features</h2>
+    <ul>
+      <li>AI-Generated Case Summaries & Recommendations</li>
+      <li>Dynamic Form Builder for Service Agencies</li>
+      <li>Client, Case, Relationship, and Appointment Management</li>
+      <li>Integrated Payments and Subscription Plans</li>
+    </ul>
+  </section>
 
-  <script src="src/js/script.js"></script>
+  <section id="architecture" class="content-section">
+    <h2>Multi-Tenant SaaS Architecture</h2>
+    <ul>
+      <li>Tenant-specific dashboards and permissions</li>
+      <li>Branch and Staff Role Management</li>
+      <li>Sub-Domain Isolation for Data Security</li>
+    </ul>
+  </section>
 
+  <section id="technology" class="content-section">
+    <h2>Technology Stack</h2>
+    <ul>
+      <li><strong>Backend:</strong> Node.js & Python</li>
+      <li><strong>Message Broker:</strong> RabbitMQ</li>
+      <li><strong>Cloud Infrastructure:</strong> Scalable cloud-native deployment</li>
+    </ul>
+  </section>
+
+  <section id="contact" class="content-section">
+    <h2>Contact Us</h2>
+    <p><a href="https://forms.gle/ABC123EXAMPLE" target="_blank">Submit our official Google Form here</a></p>
+    <form action="mailto:info@mycasepath.com" method="POST" enctype="text/plain">
+      <label for="name">Name:</label><br>
+      <input type="text" id="name" name="name" required><br><br>
+      <label for="email">Email:</label><br>
+      <input type="email" id="email" name="email" required><br><br>
+      <label for="message">Message:</label><br>
+      <textarea id="message" name="message" rows="5" required></textarea><br><br>
+      <button type="submit">Send Message</button>
+    </form>
+    <p>Or email us directly at <a href="mailto:info@mycasepath.com">info@mycasepath.com</a></p>
+  </section>
+
+  <footer>
+    <p>© 2025 CasePath Inc. All rights reserved.</p>
+  </footer>
 </body>
 </html>
